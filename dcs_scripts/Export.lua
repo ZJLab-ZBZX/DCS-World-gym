@@ -63,7 +63,6 @@ function LuaExportStart()
         LoSetCommand(53)
     end
 
-    LoSetCommand(272)
     LoSetCommand(52)
     
     socket.try(c:send('game start'))
@@ -152,12 +151,12 @@ function LuaExportActivityNextEvent(t)
     
     for k,v in pairs(o) do
         message_string = message_string .. string.format(',\n"%d": {"name": "%s", "unit": "%s", "country": "%s(%s)", "LatLongAlt": [%f,%f,%f], "Attitude": [%f, %f, %f]}',
-        k, v.Name, v.UnitName, v.Country, v.Coalition, v.LatLongAlt.Lat, v.LatLongAlt.Long, v.LatLongAlt.Alt, v.Bank, v.Pitch, v.Heading)
+        k, v.Name, tostring(v.UnitName), v.Country, v.Coalition, v.LatLongAlt.Lat, v.LatLongAlt.Long, v.LatLongAlt.Alt, v.Bank, v.Pitch, v.Heading)
     end
 
-    for i,cur in pairs(trg) do
-        message_string = message_string .. string.format(",\nID = %d, position = (%f,%f,%f) , V = (%f,%f,%f),flags = 0x%x",cur.ID,cur.position.p.x,cur.position.p.y,cur.position.p.z,cur.velocity.x,cur.velocity.y,cur.velocity.z,cur.flags)
-    end
+    -- for i,cur in pairs(trg) do
+    --     message_string = message_string .. string.format(",\nID = %d, position = (%f,%f,%f) , V = (%f,%f,%f),flags = 0x%x",cur.ID,cur.position.p.x,cur.position.p.y,cur.position.p.z,cur.velocity.x,cur.velocity.y,cur.velocity.z,cur.flags)
+    -- end
   
     message_string = message_string .. '}\n\n'
     socket.try(c:send(message_string))

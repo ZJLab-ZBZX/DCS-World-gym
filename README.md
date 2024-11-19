@@ -27,6 +27,8 @@ A third party RL environment for DCS world, using the [gymnasium library](https:
 
 ## Example Usage
 
+0. To test if the communication is setup correctly, run comm_check.py and start a mission in DCS World, you should be able to receive information about the game status.
+
 1. Run the learning script with
     ```
     $ python demo_turning_task.py
@@ -52,6 +54,6 @@ If you use this toolkit in your research, please cite it as follows:
 ```
 
 ## Contact us
-If you have any problems using the toolkit, please contact us via email at cyzhao1991@gmail.com
+If you have any issues or questions, feel free to contact us via email at cyzhao1991@gmail.com
 
 © 2024 Research Center for Intelligent Equipment of Zhejiang Lab
