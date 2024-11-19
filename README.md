@@ -23,11 +23,11 @@ A third party RL environment for DCS world, using the [gymnasium library](https:
     $ pip install -e .
     ```
 
-4. Download and install [DCS world](https://www.digitalcombatsimulator.com/cn/downloads/world/), and modify game scripts following [DCS setup guide](./dcs_scripts/README.md).
+4. Download and install [DCS world](https://www.digitalcombatsimulator.com/cn/downloads/world/), and modify game scripts following [DCS setup guide](./dcs_scripts).
 
 ## Example Usage
 
-0. To test if the communication is setup correctly, run comm_check.py and start a mission in DCS World, you should be able to receive information about the game status.
+0. To test if the communication is setup correctly, run *comm_check.py* and start a mission in DCS World, you should be able to receive information about the game status.
 
 1. Run the learning script with
     ```
