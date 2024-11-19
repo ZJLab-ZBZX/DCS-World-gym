@@ -1,0 +1,5 @@
+gymnasium
+geopy
+stable-baselines3[extra]
+tensorboard
+wandb

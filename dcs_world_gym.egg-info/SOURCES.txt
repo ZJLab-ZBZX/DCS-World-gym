@@ -1,0 +1,7 @@
+README.md
+setup.py
+dcs_world_gym.egg-info/PKG-INFO
+dcs_world_gym.egg-info/SOURCES.txt
+dcs_world_gym.egg-info/dependency_links.txt
+dcs_world_gym.egg-info/requires.txt
+dcs_world_gym.egg-info/top_level.txt
